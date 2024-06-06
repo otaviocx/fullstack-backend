@@ -13,10 +13,10 @@ public class TaskService {
 			throw new FileNotFoundException("Não há tarefas cadastradas.");
 		}
 		String resultado = "";
-		int i = 1;
+		int n = 1;
 		for (String task : tasks) {
-			resultado += "Tarefa "+i+": "+task+"\n";
-			i++;
+			resultado += "Tarefa "+n+": "+task+"\n";
+			n++;
 		}
 		return resultado;
 	}
