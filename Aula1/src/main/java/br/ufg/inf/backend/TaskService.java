@@ -10,7 +10,7 @@ public class TaskService {
 	
 	public String list() throws FileNotFoundException {
 		if(tasks.size() == 0) {
-			throw new FileNotFoundException("Nenhuma tarefa cadastrada.");
+			throw new FileNotFoundException("Não há tarefas cadastradas.");
 		}
 		String resultado = "";
 		int i = 1;
